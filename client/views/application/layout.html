@@ -1,0 +1,16 @@
+<template name="layout">
+  <div class="container">
+    <!-- Refactor to move this to a separate template since our header is growing larger -->
+<!--     <header class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="{{pathFor 'postsList'}}">Microscope</a>
+      </div>
+    </header> -->
+
+    {{> header}}
+
+    <div id="main" class="row-fluid">
+      {{> yield}}
+    </div>
+  </div>
+</template>
